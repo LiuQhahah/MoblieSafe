@@ -32,6 +32,7 @@ public class MainActivity extends Activity {
         } catch (PackageManager.NameNotFoundException e) {
             //没有找到包名的时候会走此异常
             e.printStackTrace();
+            System.out.print("dd");
         }
         return  "";
     }
