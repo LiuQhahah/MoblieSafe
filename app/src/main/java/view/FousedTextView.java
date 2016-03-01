@@ -9,29 +9,29 @@ import android.widget.TextView;
  */
 
 /**
- * »ñÈ¡½¹µãµÄtextview
+ * è·å–ç„¦ç‚¹çš„textview
  */
 public class FousedTextView extends TextView {
 
-    //ÓÃ´úÂënew¶ÔÏóÊ±×ß´Ë·½·¨
+    //ç”¨ä»£ç newå¯¹è±¡æ—¶èµ°æ­¤æ–¹æ³•
     public FousedTextView(Context context) {
         super(context);
 
     }
-    //ÓĞÊôĞÔÊ±×ß´Ë·½·¨
+    //æœ‰å±æ€§æ—¶èµ°æ­¤æ–¹æ³•
     public FousedTextView(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 
-    //ÓĞstyleÑùÊ½µÄ»°»á×ß´Ë·½·¨
+    //æœ‰styleæ ·å¼çš„è¯ä¼šèµ°æ­¤æ–¹æ³•
     public FousedTextView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
 
     /**
-     * ±íÊ¾ÓĞÃ»ÓĞ»ñÈ¡½¹µã
-     * ÅÜÂíµÆÒªÔËĞĞ£¬Ê×ÏÈµ÷ÓÃ´Ëº¯ÊıÅĞ¶ÏÊÇ·ñÓĞ½¹µã£¬ÊÇtrue±íÊ¾ÅÜÂíµÆ²Å»áÓĞĞ§¹û
-     * ËùÒÔÇ¿ÖÆ·µ»Øtrue£¬ËùÒÔÎÒÃÇ²»¹ÜÊµ¼ÊÉÏtextviewÓĞÃ»ÓĞ½¹µã£¬ÎÒÃÇ¶¼Ç¿ÖÆ·µ»Øtrue,ÈÃÅÜÂíµÆÈÏÎªÓĞ½¹µã
+     * è¡¨ç¤ºæœ‰æ²¡æœ‰è·å–ç„¦ç‚¹
+     * è·‘é©¬ç¯è¦è¿è¡Œï¼Œé¦–å…ˆè°ƒç”¨æ­¤å‡½æ•°åˆ¤æ–­æ˜¯å¦æœ‰ç„¦ç‚¹ï¼Œæ˜¯trueè¡¨ç¤ºè·‘é©¬ç¯æ‰ä¼šæœ‰æ•ˆæœ
+     * æ‰€ä»¥å¼ºåˆ¶è¿”å›trueï¼Œæ‰€ä»¥æˆ‘ä»¬ä¸ç®¡å®é™…ä¸Štextviewæœ‰æ²¡æœ‰ç„¦ç‚¹ï¼Œæˆ‘ä»¬éƒ½å¼ºåˆ¶è¿”å›true,è®©è·‘é©¬ç¯è®¤ä¸ºæœ‰ç„¦ç‚¹
      * @return
      */
     @Override

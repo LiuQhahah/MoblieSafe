@@ -1,26 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
     <TextView
-        android:id="@+id/tv_title"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:textColor="@color/black"
-        android:background="#8866ff00"
-        android:textSize="22sp"
-        android:text="功能列表"
-        android:gravity="center_vertical|center_horizontal" />
+        style="@style/TitleStyle"
+        android:text="功能列表" />
+
     <view.FousedTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        android:text="老子转过身哈哈哈哈,你说你最伟大，你说你最优秀"
-        android:singleLine="true"
-        android:ellipsize="marquee"
+        android:layout_marginBottom="5dp"
         android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"/>
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="老子转过身哈哈哈哈,你说你最伟大，你说你最优秀"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
     <GridView
         android:id="@+id/gv_home"
         android:layout_width="match_parent"

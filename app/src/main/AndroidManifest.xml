@@ -2,8 +2,8 @@
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
     package="liuqiang.njupt.edu.mobliesafe"
-    android:versionCode="2"
-    android:versionName="2.0">
+    android:versionCode="1"
+    android:versionName="1.0">
 
     <uses-permission android:name="ANDROID.PERMISSION.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
@@ -23,6 +23,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".HomeActivity"/>
+        <activity android:name=".SettingActivity"/>
+        <activity android:name=".LostFindActivity"/>
+        <activity android:name=".Setup1Activity"/>
     </application>
 
 </manifest>
