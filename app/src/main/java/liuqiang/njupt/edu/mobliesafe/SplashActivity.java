@@ -28,6 +28,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
@@ -39,7 +40,7 @@ import utils.StreamUtils;
 
 public class SplashActivity extends Activity {
     private TextView tvVersion;
-    private final String TAG = "Splash";
+    private final String TAG = "SplashActivity";
     //版本信息
     private String mVersionName;//版本名
     private int mVersionCode;//版本号
@@ -93,6 +94,8 @@ public class SplashActivity extends Activity {
 
         rlRoot = (RelativeLayout) findViewById(R.id.rl_root);
         mPref = getSharedPreferences("config", MODE_PRIVATE);
+
+        copyDB("address.db");
         //判断是否需要自动更新，默认检测自动更新
         boolean autoUpdate = mPref.getBoolean("auto_update", true);
         if (autoUpdate) {
@@ -335,5 +338,50 @@ public class SplashActivity extends Activity {
         Intent intent = new Intent(this, HomeActivity.class);
         startActivity(intent);
         finish();
+    }
+
+    /**
+     * 拷贝数据库
+     *
+     * @param dbName
+     */
+    private void copyDB(String dbName) {
+//        File filesDir = getFilesDir();
+//        Log.i(TAG,"路径："+filesDir.getAbsolutePath());
+
+        File destFile = new File(getFilesDir(), dbName);//要拷贝的目标地址
+
+        if (destFile.exists()){
+            Log.i(TAG,"数据库"+dbName+"已存在！");
+//            destFile.delete();
+//            Log.i(TAG, "数据库" + dbName + "已删除！");
+            return;
+        }
+        FileOutputStream out = null;
+        InputStream in = null;
+        try {
+            in = getAssets().open(dbName);
+            out = new FileOutputStream(destFile);
+
+            int len = 0;
+            byte[] buffer = new byte[1024];
+            Log.i(TAG,"长度为："+String.valueOf(in.read(buffer)));
+            while ((len = in.read(buffer)) != -1) {
+
+                out.write(buffer, 0, len);
+            }
+        } catch (IOException e) {
+            //空指针异常原因由于文件夹assets目录创建有问题，应该放在main文件夹下
+            e.printStackTrace();
+        } finally {
+            try {
+                in.close();
+                out.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+        }
+
     }
 }

@@ -48,15 +48,21 @@ public class HomeActivity extends Activity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 switch (position) {
+                    case 0:
+                        //手机防盗
+                        showPasswordDialog();
+                        break;
+                    case 7:
+                        //高级工具
+                        startActivity(new Intent(HomeActivity.this,
+                                AToolsActivity.class));
+                        break;
                     case 8:
                         //设置中心
                         startActivity(new Intent(HomeActivity.this,
                                 SettingActivity.class));
                         break;
-                    case 0:
-                        //手机防盗
-                        showPasswordDialog();
-                        break;
+
 
                 }
             }
@@ -80,10 +86,15 @@ public class HomeActivity extends Activity {
     /**
      * 輸入密碼彈窗
      */
+
+
     private void showPasswordInputDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         final AlertDialog dialog = builder.create();
+
+
         View view = View.inflate(this, R.layout.dailog_input_password, null);
+
         //dialog.setView(view);//将自定义的布局文件设置给dialog
         dialog.setView(view, 0, 0, 0, 0);//设置边距为0.在2.x版本上运行没问题
 

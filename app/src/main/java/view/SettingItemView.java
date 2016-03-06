@@ -10,7 +10,6 @@ import android.widget.TextView;
 
 import liuqiang.njupt.edu.mobliesafe.R;
 
-
 /**
  * Created by asus on 2016/3/1.
  */
@@ -32,35 +31,35 @@ public class SettingItemView extends RelativeLayout {
 
     public SettingItemView(Context context) {
         super(context);
-        ininView();
+        initView();
     }
 
     public SettingItemView(Context context, AttributeSet attrs) {
         super(context, attrs);
 
-        int attributeCount = attrs.getAttributeCount();
-        for (int i = 0; i < attributeCount; i++) {
-            String attributeName = attrs.getAttributeName(i);
-            String attributeValue = attrs.getAttributeValue(i);
-            Log.i(TAG, attributeName + "=" + attributeValue);
-        }
+//        int attributeCount = attrs.getAttributeCount();
+//        for (int i = 0; i < attributeCount; i++) {
+//            String attributeName = attrs.getAttributeName(i);
+//            String attributeValue = attrs.getAttributeValue(i);
+//            Log.i(TAG, attributeName + "=" + attributeValue);
+//        }
         //根据属性名称获取属性的值
         mTitle = attrs.getAttributeValue(NAMESPACE, "siv_title");
         mDesc_on = attrs.getAttributeValue(NAMESPACE, "desc_on");
         mDesc_0ff = attrs.getAttributeValue(NAMESPACE, "desc_off");
-        Log.i(TAG, mTitle + mDesc_0ff + mDesc_on);
-        ininView();
+
+        initView();
     }
 
     public SettingItemView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        ininView();
+        initView();
     }
 
     /**
      * 初始化布局
      */
-    private void ininView() {
+    private void initView() {
         /**
          将自定义好的布局问件设置给当前的SettingItemView
          */

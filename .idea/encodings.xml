@@ -1,9 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/CallerLoc.db" charset="GBK" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/liuqiang/njupt/edu/mobliesafe/HomeActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/receiver/AdminReceiver.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/utils/StreamUtils.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/view/FousedTextView.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/btn_green_normal.9.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/btn_green_pressed.9.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/call_locate_blue.9.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/call_locate_gray.9.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/call_locate_green.9.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/call_locate_orange.9.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/call_locate_white.9.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/gradient_box.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/shape_selector.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/contact_list_item.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/dailog_input_password.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/drag.bmp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/jiantou1_pressed.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/listview_divider.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/lock.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/xml" charset="GBK" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
